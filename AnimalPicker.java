@@ -6,14 +6,14 @@ public class AnimalPicker {
         String choice = "";
 
         //keep asking until valid input
-        while (!choice.equals("dog") && !choice.equals("cat") && !choice.equals("fish")) {
+        while (!choice.equals("dog") && !choice.equals("cat") && !choice.equals("fish") && !choice.equals("bunny")) {
             //user input
-            System.out.println("Which animal would you like to see? (dog/cat/fish)");
+            System.out.println("Which animal would you like to see? (dog/cat/fish/bunny)");
             choice = scanner.nextLine().toLowerCase();
 
             //error message
-            if (!choice.equals("dog") && !choice.equals("cat") && !choice.equals("fish")) {
-                System.out.println("Error: Invalid option. Please enter 'dog', 'cat', or 'fish'.");
+            if (!choice.equals("dog") && !choice.equals("cat") && !choice.equals("fish") && !choice.equals("bunny")) {
+                System.out.println("Error: Invalid option. Please enter 'dog', 'cat', 'fish', or 'bunny'.");
             }
         }
 
@@ -64,6 +64,27 @@ public class AnimalPicker {
                                 "  ,'        `.    \\  /\r\n" + //
                                 "  |  O        \\___/  |\r\n" + //
                                 "~^~^~^~^~^~^~^~^~^~^~^~^~");
-        }
-    }
+        } else if (choice.equals("bunny")) {
+    } System.out.println(
+        "             ,\n" +
+        "            /|      __\n" +
+        "           / |   ,-~ /\n" +
+        "          Y :|  //  /\n" +
+        "          | jj /( .^\n" +
+        "          >-\"~\"-v\"\n" +
+        "         /       Y\n" +
+        "        jo  o    |\n" +
+        "       ( ~T~     j\n" +
+        "        >._-' _./\n" +
+        "       /   \"~\"  |\n" +
+        "      Y     _,  |\n" +
+        "     /| ;-\"~ _  l\n" +
+        "    / l/ ,-\"~    \\\n" +
+        "    \\//\\/      .- \\\n" +
+        "     Y        /    Y    \n" +
+        "     l       I     !\n" +
+        "     ]\\      _\\    /\"\\\n" +
+        "    (\" ~----( ~   Y.  )\n" +
+        "~~~~~~~~~~~~~~~~~~~~~~~~~");
+}
 }
